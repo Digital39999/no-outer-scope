@@ -1,0 +1,15 @@
+{
+	"name": "eslint-plugin-no-outer-scope",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha tests/**/*.js"
+	},
+	"dependencies": {
+		"eslint": "^7.32.0",
+		"mocha": "^9.1.3"
+	},
+	"devDependencies": {
+		"eslint": "^7.32.0"
+	}
+}
