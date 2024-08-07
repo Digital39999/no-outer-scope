@@ -1,15 +1,26 @@
 {
-	"name": "eslint-plugin-no-outer-scope",
 	"version": "1.0.0",
-	"main": "index.js",
+	"name": "eslint-plugin-no-outer-scope",
+	"author": "DIgital39999",
 	"scripts": {
-		"test": "mocha tests/**/*.js"
+		"ts": "pnpm install typescript --save-dev -g",
+		"init": "pnpm install && pnpm run build && pnpm run start",
+		"start": "node dist/index.js",
+		"build": "tsc --build",
+		"watch": "tsc --watch",
+		"test": "mocha dist/tests/lib/*.js",
+		"lint": "eslint . --ext .ts"
 	},
+	"main": "dist/index.js",
+	"license": "MIT",
 	"dependencies": {
-		"eslint": "^7.32.0",
+		"eslint": "^9.6.0",
 		"mocha": "^9.1.3"
 	},
 	"devDependencies": {
-		"eslint": "^7.32.0"
+		"@types/eslint": "^9.6.0",
+		"@typescript-eslint/eslint-plugin": "7.5.0",
+		"@typescript-eslint/parser": "7.5.0",
+		"typescript": "5.4.3"
 	}
 }

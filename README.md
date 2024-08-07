@@ -22,7 +22,7 @@ To use this plugin, you need to configure ESLint to include it in your configura
 {
   "plugins": ["no-outer-scope"],
   "rules": {
-    "no-outer-scope/no-outer-scope": ["error", { "functions": ["callbackFunction", "anotherFunction"] }]
+    "no-outer-scope/no-outer-scope": "error"
   }
 }
 ```
@@ -33,7 +33,7 @@ To use this plugin, you need to configure ESLint to include it in your configura
 module.exports = {
   plugins: ["no-outer-scope"],
   rules: {
-    "no-outer-scope/no-outer-scope": ["error", { functions: ["callbackFunction", "anotherFunction"] }]
+    "no-outer-scope/no-outer-scope": "error"
   }
 };
 ```
